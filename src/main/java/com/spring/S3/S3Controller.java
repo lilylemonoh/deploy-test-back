@@ -20,10 +20,10 @@ public class S3Controller {
         this.s3Uploader = s3Uploader;
     }
 
-    @Value("ENC()")
+    @Value("${cdnBasePath}")
     private String cdnBasePath;
 
-    @Value("ENC()")
+    @Value("${ncBasePath}")
     private String ncBasePath;
 
     // 파일 1개 업로드
