@@ -30,10 +30,10 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/rest/*")
 public class ChatBotController {
 
-    @Value("${secretKey}")
+    @Value("ENC(bFhzjQvZY/n+hxQ7FfacQ5HP01q63edjuTnNtOmjc/SR1jcDA+o7Ngf/oIWfUoW6e7sCxb6FWwI=)")
     private String secretKey;
 
-    @Value("${apiUrl}")
+    @Value("ENC(wM8mfSVMYYwzvgBfg9fuXG8yooh/CPpHkq53lgHLGFLog2AoJb1Rii2q62Wi3eZ8LRXdh/9gHkyp+u7rEZY8AryH7Ydgd+aDCZ0LvDK5agLVBUs6+moMDEllBVoldRXMzWchkRmLU+gaqhcmRhM7wwxy74rmWR7o6V8y2aAiy4s=)")
     private String apiUrl;
 
     private final RestTemplate restTemplate;
